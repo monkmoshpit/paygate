@@ -15,6 +15,8 @@
 
 O fluxo é baseado em **operações em múltiplas etapas**, onde cada fase é executada de forma independente e acompanhada ao longo de seu ciclo de vida. O sistema lida com falhas parciais, execução assíncrona e consistência de estado durante todo o processamento.
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/monkmoshpit/paygate)
+
 ---
 
 ## 🚀 Principais Features
