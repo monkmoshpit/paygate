@@ -6,6 +6,6 @@ services:
 
   - type: worker
     name: paygate-worker
-    runtime: php
-    plan: docker
+    runtime: docker
+    plan: free
     startCommand: php artisan queue:work --tries=3
