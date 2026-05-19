@@ -8,4 +8,4 @@ services:
     name: paygate-worker
     runtime: docker
     plan: free
-    startCommand: php artisan queue:work --tries=3
+    dockerCommand: php artisan queue:work --tries=3
