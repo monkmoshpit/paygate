@@ -1,14 +1,11 @@
 services:
   - type: web
     name: paygate-api
-    runtime: php
+    runtime: docker
     plan: free
-    buildCommand: composer install --no-dev --optimize-autoloader
-    startCommand: php artisan serve --host=0.0.0.0 --port=10000
 
   - type: worker
     name: paygate-worker
     runtime: php
-    plan: free
-    buildCommand: composer install --no-dev --optimize-autoloader
+    plan: docker
     startCommand: php artisan queue:work --tries=3
